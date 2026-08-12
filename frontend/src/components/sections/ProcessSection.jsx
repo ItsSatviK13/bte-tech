@@ -30,7 +30,7 @@ export default function ProcessSection() {
   return (
     <section id="process" className="bg-[#EFEFEF] py-10 md:py-20">
       <div className="mx-auto max-w-[1360px] px-5 lg:px-8">
-        <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <div className="mb-10 flex flex-col gap-4 text-center md:text-left md:flex-row md:items-center md:justify-between">
           <h2 className="text-3xl font-black tracking-tight text-[#353D65] md:text-5xl">
             Our Screening Process
           </h2>
@@ -42,7 +42,7 @@ export default function ProcessSection() {
         <div className="grid gap-5 md:grid-cols-5">
           {steps.map((step, index) => (
             <div key={step.number} className="group relative h-full">
-              <div className="flex h-full flex-col rounded-[1.5rem] border border-[#dfe4ea] bg-white p-4 shadow-sm transition group-hover:shadow-md">
+              <div className="flex h-full flex-col items-center text-center md:items-start md:text-left rounded-[1.5rem] border border-[#dfe4ea] bg-white p-4 shadow-sm transition group-hover:shadow-md">
                 <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#52D5C4]/20 text-sm font-bold text-[#353D65]">
                   {step.number}
                 </div>
