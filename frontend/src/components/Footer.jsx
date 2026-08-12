@@ -19,8 +19,8 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-4">
           <div className="space-y-4">
             <a href="#home" className="flex items-center gap-3" aria-label="BTE-Tech home">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl  bg-white/10 text-lg font-bold text-white">
-                <img src='/logo .png' alt='BTE-Tech logo' className='h-10 w-10 rounded-md' />
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl text-lg font-bold text-white">
+                <img src='/logo.png' alt='BTE-Tech logo' className='h-10 w-10 rounded-md' />
               </div>
               <span className="text-2xl font-black tracking-tight text-white">BTE-Tech</span>
             </a>
