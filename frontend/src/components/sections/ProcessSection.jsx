@@ -34,9 +34,9 @@ export default function ProcessSection() {
           <h2 className="text-3xl font-black tracking-tight text-[#353D65] md:text-5xl">
             Our Screening Process
           </h2>
-          <a href="#contact" className="text-sm font-semibold text-[#353D65] transition hover:text-[#5DA854]">
+          {/* <a href="#compliance" className="text-sm font-semibold text-[#353D65] transition hover:text-[#5DA854]">
             View Detailed Process →
-          </a>
+          </a> */}
         </div>
 
         <div className="grid gap-5 md:grid-cols-5">

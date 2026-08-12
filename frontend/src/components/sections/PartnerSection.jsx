@@ -45,7 +45,7 @@ export default function PartnerSection() {
   }
 
   return (
-    <section id="contact" className="bg-[#EFEFEF] py-16 md:py-24">
+    <section id="contact" className="bg-[#EFEFEF] py-10 md:py-20">
       <div className="mx-auto grid max-w-[1360px] gap-8 px-5 lg:grid-cols-[0.9fr_1.6fr] lg:px-8">
         <div className="relative overflow-hidden rounded-[2rem] border border-[#dfe4ea] bg-white p-7 shadow-[0_18px_40px_rgba(53,61,101,0.08)]">
           <div className="absolute -right-10 top-5 h-32 w-32 rounded-full bg-[#52D5C4]/10" />
