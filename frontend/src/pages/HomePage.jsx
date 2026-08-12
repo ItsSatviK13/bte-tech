@@ -12,9 +12,9 @@ export default function HomePage() {
       <Navbar />
       <main>
         <HeroSection />
-        <WhyChooseSection />
         <ProcessSection />
         <ComplianceSection />
+        <WhyChooseSection />
         <PartnerSection />
       </main>
       <Footer />
