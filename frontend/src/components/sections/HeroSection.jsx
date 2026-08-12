@@ -7,7 +7,7 @@ export default function HeroSection() {
         <div className="grid items-center gap-8 lg:grid-cols-[1fr_1.1fr]">
           <div className="space-y-6 py-10">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#353D65]">
-              Smarter Screening. Stronger Futures.
+              Compliance To Career 
             </p>
 
             <h1 className="max-w-xl text-5xl font-black leading-[1.1] tracking-[-0.04em] text-[#353D65] xl:text-[4.25rem]">
