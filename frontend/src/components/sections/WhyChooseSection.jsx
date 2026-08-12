@@ -37,7 +37,7 @@ export default function WhyChooseSection() {
       <div id="why-us" className="mx-auto max-w-[1360px] px-5 lg:px-8">
         <div className="mb-10 text-center">
           <h2 className="text-3xl font-black tracking-tight text-[#353D65] md:text-5xl">
-            Why Universities Choose EduScreen
+            Why Universities Choose BTE-Tech
           </h2>
         </div>
 

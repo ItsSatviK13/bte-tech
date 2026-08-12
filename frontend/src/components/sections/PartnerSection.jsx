@@ -90,14 +90,14 @@ export default function PartnerSection() {
               />
             </div>
             <div>
-              <label htmlFor="organization" className="mb-2 block text-sm font-semibold text-[#353D65]">University / Organization</label>
+              <label htmlFor="organization" className="mb-2 block text-sm font-semibold text-[#353D65]">Institution / Organization</label>
               <input
                 id="organization"
                 name="organization"
                 type="text"
                 required
                 className="w-full border border-[#dfe4ea] bg-[#EFEFEF] px-4 py-3 text-[#353D65] outline-none transition focus:border-[#52D5C4]"
-                placeholder="University / Organization"
+                placeholder="Institution / Organization"
               />
             </div>
             <div>
