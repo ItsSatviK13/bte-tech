@@ -3,6 +3,7 @@ const navItems = [
   { label: 'About Us', href: '#about' },
   { label: 'Our Process', href: '#process' },
   { label: 'Why Us', href: '#why-us' },
+  { label: 'Compliance', href: '#compliance' },
   { label: 'Resources', href: '#resources' },
   { label: 'Contact Us', href: '#contact' },
 ]
