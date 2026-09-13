@@ -426,6 +426,221 @@
 //   );
 // }
 
+// const complianceItems = [
+//   {
+//     number: '01',
+//     status: 'GREEN',
+//     title: 'Verified',
+//     subtitle: 'Zero-risk file',
+//     color: '#5DA854',
+//     bg: '#ffffff',
+//     bullets: [
+//       'Documentation complete',
+//       '28-day funds verified',
+//       'Academic record verified',
+//     ],
+//     graphStats: [
+//       { label: 'Integrity', val: '98%', width: '98%' },
+//       { label: 'Risk Index', val: '0.2%', width: '15%' },
+//     ],
+//     action: 'CLEAR TO PROCEED',
+//   },
+//   {
+//     number: '02',
+//     status: 'AMBER',
+//     title: 'Review',
+//     subtitle: 'Clarification needed',
+//     color: '#FFAB00',
+//     bg: '#ffffff',
+//     bullets: [
+//       'Document history check',
+//       'Funding origin review',
+//       'Regional anomaly check',
+//     ],
+//     graphStats: [
+//       { label: 'Integrity', val: '74%', width: '74%' },
+//       { label: 'Risk Index', val: '4.8%', width: '45%' },
+//     ],
+//     action: 'MANUAL REVIEW',
+//   },
+//   {
+//     number: '03',
+//     status: 'RED',
+//     title: 'Flagged',
+//     subtitle: 'Non-compliant file',
+//     color: '#FF1744',
+//     bg: '#ffffff',
+//     bullets: [
+//       'Financial inconsistency',
+//       'Qualification unverified',
+//       'Credibility failure',
+//     ],
+//     graphStats: [
+//       { label: 'Integrity', val: '31%', width: '31%' },
+//       { label: 'Risk Index', val: '91.2%', width: '90%' },
+//     ],
+//     action: 'ACTION REQUIRED',
+//   },
+// ]
+
+// export default function ComplianceSection() {
+//   return (
+//     <section
+//       id="compliance"
+//       className="bg-[#EFEFEF] py-16 md:py-24 relative overflow-hidden"
+//     >
+//       {/* Decorative background grid and sketch shade blobs */}
+//       <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#353D65_1px,transparent_1px)] [background-size:16px_16px]" />
+      
+//       <div className="absolute -top-24 -left-24 w-96 h-96 bg-[#52D5C4]/20 rounded-full blur-3xl pointer-events-none" />
+//       <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-[#5DA854]/15 rounded-full blur-3xl pointer-events-none" />
+
+//       <div className="mx-auto max-w-[1360px] px-5 lg:px-8 relative z-10">
+
+//         {/* Section Header */}
+//         <div className="mb-14 text-center max-w-2xl mx-auto">
+//           <span className="inline-block mb-3 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-[0.2em] bg-[#353D65]/5 text-[#353D65] border border-[#353D65]/10 shadow-[2px_2px_0px_0px_#353D65]">
+//             Compliance Framework
+//           </span>
+
+//           <h2 className="text-3xl font-black tracking-tight text-[#353D65] md:text-5xl">
+//             Risk Triage, at a Glance
+//           </h2>
+
+//           <p className="mt-4 text-base leading-7 text-[#353D65]/70 md:text-lg font-medium">
+//             A precise three-stage sketch and metrics system for real-time applicant-file readiness.
+//           </p>
+//         </div>
+
+//         {/* Cards Grid */}
+//         <div className="grid gap-8 lg:grid-cols-3">
+
+//           {complianceItems.map((item) => (
+//             <div
+//               key={item.number}
+//               className="relative rounded-[20px] bg-[#ffffff] p-8 transition-all duration-300 hover:-translate-y-1.5 group"
+//               style={{
+//                 /* Sketchy hand-drawn multi-layered hard shadow border aesthetic */
+//                 border: '3px solid #353D65',
+//                 boxShadow: '6px 6px 0px 0px #353D65',
+//               }}
+//             >
+//               {/* Decorative Corner Sketch Notch */}
+//               <div className="absolute top-0 right-0 w-8 h-8 bg-[#353D65]/5 rounded-bl-[20px] border-b-2 border-l-2 border-[#353D65]" />
+
+//               {/* Number Badge */}
+//               <div className="flex items-center justify-between mb-6">
+//                 <div
+//                   className="flex h-12 w-12 items-center justify-center rounded-xl text-lg font-black"
+//                   style={{
+//                     backgroundColor: item.bg,
+//                     color: '#353D65',
+//                     border: '2px solid #353D65',
+//                     boxShadow: '2px 2px 0px 0px #353D65',
+//                   }}
+//                 >
+//                   {item.number}
+//                 </div>
+
+//                 <div 
+//                   className="px-3 py-1 rounded-full text-xs font-black tracking-wider uppercase"
+//                   style={{ 
+//                     backgroundColor: `${item.color}20`,
+//                     color: '#353D65',
+//                     border: `2px solid #353D65`
+//                   }}
+//                 >
+//                   {item.status}
+//                 </div>
+//               </div>
+
+//               {/* Titles */}
+//               <h3 className="text-3xl font-black text-[#353D65] tracking-tight">
+//                 {item.title}
+//               </h3>
+
+//               <p className="mt-1 text-sm font-bold text-[#353D65]/60">
+//                 {item.subtitle}
+//               </p>
+
+//               {/* Checklist */}
+//               <div className="mt-6 space-y-3">
+//                 {item.bullets.map((bullet) => (
+//                   <div
+//                     key={bullet}
+//                     className="flex items-center gap-3 bg-[#EFEFEF]/50 p-2.5 rounded-lg border border-[#353D65]/10"
+//                   >
+//                     <span
+//                       className="flex h-2.5 w-2.5 shrink-0 rounded-full border border-[#353D65]"
+//                       style={{
+//                         backgroundColor: item.color,
+//                       }}
+//                     />
+//                     <span className="text-xs font-bold leading-tight text-[#353D65]">
+//                       {bullet}
+//                     </span>
+//                   </div>
+//                 ))}
+//               </div>
+
+//               {/* Visual Graph Section Added to All Cards */}
+//               <div className="mt-6 pt-5 border-t-2 border-dashed border-[#353D65]/20">
+//                 <p className="text-[10px] font-black uppercase tracking-wider text-[#353D65]/60 mb-3">
+//                   Analytics & Metric Breakdown
+//                 </p>
+//                 <div className="space-y-2.5">
+//                   {item.graphStats.map((stat, idx) => (
+//                     <div key={idx}>
+//                       <div className="flex justify-between text-xs font-black text-[#353D65] mb-1">
+//                         <span>{stat.label}</span>
+//                         <span>{stat.val}</span>
+//                       </div>
+//                       <div className="h-3 w-full bg-[#EFEFEF] rounded-full overflow-hidden p-0.5 border border-[#353D65]">
+//                         <div
+//                           className="h-full rounded-full transition-all duration-500"
+//                           style={{
+//                             width: stat.width,
+//                             backgroundColor: item.color,
+//                           }}
+//                         />
+//                       </div>
+//                     </div>
+//                   ))}
+//                 </div>
+//               </div>
+
+//               {/* Action Button Banner */}
+//               <div className="mt-8 pt-4 border-t-2 border-[#353D65]">
+//                 <div
+//                   className="w-full py-3 text-center rounded-xl text-xs font-black tracking-[0.15em] transition-all"
+//                   style={{
+//                     backgroundColor: item.color,
+//                     color: '#353D65',
+//                     border: '2px solid #353D65',
+//                     boxShadow: '2px 2px 0px 0px #353D65',
+//                   }}
+//                 >
+//                   {item.action}
+//                 </div>
+//               </div>
+
+//             </div>
+//           ))}
+
+//         </div>
+
+//         {/* Bottom banner */}
+//         <div className="mt-12 rounded-2xl bg-white px-6 py-5 text-center border-2 border-[#353D65] shadow-[4px_4px_0px_0px_#353D65]">
+//           <p className="text-sm font-black text-[#353D65] md:text-base">
+//             Decision logic workflow: verify → clarify → protect compliance infrastructure.
+//           </p>
+//         </div>
+
+//       </div>
+//     </section>
+//   )
+// }
+
 const complianceItems = [
   {
     number: '01',
@@ -433,6 +648,7 @@ const complianceItems = [
     title: 'Verified',
     subtitle: 'Zero-risk file',
     color: '#5DA854',
+    textColor: '#353D65', // Dark text for lighter green
     bg: '#ffffff',
     bullets: [
       'Documentation complete',
@@ -451,6 +667,7 @@ const complianceItems = [
     title: 'Review',
     subtitle: 'Clarification needed',
     color: '#FFAB00',
+    textColor: '#353D65', // Dark text for amber
     bg: '#ffffff',
     bullets: [
       'Document history check',
@@ -469,6 +686,7 @@ const complianceItems = [
     title: 'Flagged',
     subtitle: 'Non-compliant file',
     color: '#FF1744',
+    textColor: '#ffffff', // White text for deep dark red contrast
     bg: '#ffffff',
     bullets: [
       'Financial inconsistency',
@@ -520,7 +738,6 @@ export default function ComplianceSection() {
               key={item.number}
               className="relative rounded-[20px] bg-[#ffffff] p-8 transition-all duration-300 hover:-translate-y-1.5 group"
               style={{
-                /* Sketchy hand-drawn multi-layered hard shadow border aesthetic */
                 border: '3px solid #353D65',
                 boxShadow: '6px 6px 0px 0px #353D65',
               }}
@@ -583,7 +800,7 @@ export default function ComplianceSection() {
                 ))}
               </div>
 
-              {/* Visual Graph Section Added to All Cards */}
+              {/* Visual Graph Section */}
               <div className="mt-6 pt-5 border-t-2 border-dashed border-[#353D65]/20">
                 <p className="text-[10px] font-black uppercase tracking-wider text-[#353D65]/60 mb-3">
                   Analytics & Metric Breakdown
@@ -609,13 +826,13 @@ export default function ComplianceSection() {
                 </div>
               </div>
 
-              {/* Action Button Banner */}
+              {/* Action Button Banner with safe dynamic text colors */}
               <div className="mt-8 pt-4 border-t-2 border-[#353D65]">
                 <div
                   className="w-full py-3 text-center rounded-xl text-xs font-black tracking-[0.15em] transition-all"
                   style={{
                     backgroundColor: item.color,
-                    color: '#353D65',
+                    color: item.textColor,
                     border: '2px solid #353D65',
                     boxShadow: '2px 2px 0px 0px #353D65',
                   }}
