@@ -1,15 +1,15 @@
+import { Link } from 'react-router-dom'
+
 const quickLinks = [
-  { label: 'About Us', href: '#about' },
-  { label: 'Our Process', href: '#process' },
-  { label: 'Why Us', href: '#why-us' },
-//   { label: 'Resources', href: '#resources' },
+  { label: 'About Us', href: '/about' },
+  { label: 'Universities', href: '/universities' },
+  { label: 'Companies', href: '/companies' },
 ]
 
 const solutions = [
-  { label: 'Student Screening', href: '#process' },
-  { label: 'Eligibility Check', href: '#process' },
-//   { label: 'Reporting', href: '#resources' },
-  { label: 'Support', href: '#contact' },
+  { label: 'University Process Page', href: '/universities#process' },
+  { label: 'Company Process Page', href: '/companies#process' },
+  { label: 'Support', href: '/universities#contact' },
 ]
 
 export default function Footer() {
@@ -18,12 +18,12 @@ export default function Footer() {
       <div className="mx-auto max-w-[1360px] px-5 py-12 lg:px-8">
         <div className="grid gap-10 md:grid-cols-4">
           <div className="space-y-4">
-            <a href="#home" className="flex items-center gap-3" aria-label="BTE-Tech home">
+            <Link to="/" className="flex items-center gap-3" aria-label="BTE-Tech home">
               <div className="flex h-10 w-10 items-center justify-center rounded-xl text-lg font-bold text-white">
                 <img src='/logo.png' alt='BTE-Tech logo' className='h-10 w-10 rounded-md' />
               </div>
               <span className="text-2xl font-black tracking-tight text-white">BTE-Tech</span>
-            </a>
+            </Link>
             <p className="max-w-xs text-sm text-white/80">
               Screening and verification with reliable student screening and evaluation to build stronger futures.
             </p>
@@ -34,9 +34,9 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-white/80">
               {quickLinks.map((item) => (
                 <li key={item.label}>
-                  <a href={item.href} className="hover:text-[#52D5C4]">
+                  <Link to={item.href} className="hover:text-[#52D5C4]">
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -47,9 +47,9 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-white/80">
               {solutions.map((item) => (
                 <li key={item.label}>
-                  <a href={item.href} className="hover:text-[#52D5C4]">
+                  <Link to={item.href} className="hover:text-[#52D5C4]">
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

@@ -188,6 +188,7 @@ const navItems = [
   { label: 'Home', href: '/' },
   { label: 'For Universities', href: '/universities' },
   { label: 'For Companies', href: '/companies' },
+  { label: 'About Us', href: '/about' },
 ]
 
 export default function Navbar() {

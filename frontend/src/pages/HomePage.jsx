@@ -23,10 +23,20 @@
 // }
 
 import { Link } from 'react-router-dom'
+import Seo from '../components/Seo'
 
 export default function HomePage() {
   return (
-    <div className="mx-auto max-w-[1360px] px-5 py-16 md:py-28 lg:px-8">
+    <>
+      <Seo
+        title="BTE-Tech Home"
+        description="BTE-Tech automates verification, financial compliance audits, and international talent screening for universities and global employers."
+        canonical="https://bte-tech.com/"
+        keywords="BTE-Tech, university verification, international talent screening, compliance, employer hiring"
+        image="https://bte-tech.com/logo.png"
+      />
+
+      <div className="mx-auto max-w-[1360px] px-5 py-16 md:py-28 lg:px-8">
       <div className="grid gap-12 lg:grid-cols-2 items-center">
         
         {/* Left Intro content */}
@@ -103,5 +113,6 @@ export default function HomePage() {
 
       </div>
     </div>
+    </>
   )
 }

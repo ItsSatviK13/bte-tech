@@ -162,11 +162,19 @@
 import ProcessSection from '../components/sections/ProcessSection'
 import WhyChooseSection from '../components/sections/WhyChooseSection'
 import PartnerSection from '../components/sections/PartnerSection'
+import Seo from '../components/Seo'
 import { mncHeroData, mncProcessSteps, mncWhyChooseFeatures } from '../data/mncData'
 
 export default function MncPage() {
   return (
     <>
+      <Seo
+        title="Company Screening & Hiring Solutions"
+        description="BTE-Tech supports employer screening with credential checks, compliance triage, and pre-vetted international talent pipelines."
+        canonical="https://bte-tech.com/companies"
+        keywords="company hiring solutions, international talent pipeline, global employer screening, credential verification, compliance"
+        image="https://bte-tech.com/logo.png"
+      />
       {/* Custom MNC Hero Sub-section */}
       <section className="bg-[#EFEFEF] py-12 md:py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#353D65_1px,transparent_1px)] [background-size:16px_16px]" />
